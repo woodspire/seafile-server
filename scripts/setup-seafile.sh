@@ -431,7 +431,7 @@ function usage() {
 # Main workflow of this script 
 # -------------------------------------------
 
-for param in $@; do
+for param in "$@"; do
     if [[ "$param" == "-h" || "$param" == "--help" ]]; then
         usage;
         exit 0
